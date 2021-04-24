@@ -1,0 +1,13 @@
+package proyecto.escalab.microservicio.user;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProyectoMicroservicioUserApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProyectoMicroservicioUserApplication.class, args);
+	}
+
+}

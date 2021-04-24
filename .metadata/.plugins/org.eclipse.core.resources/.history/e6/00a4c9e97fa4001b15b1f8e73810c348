@@ -1,0 +1,13 @@
+package proyecto.escalab.zuul;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ProyectoMicroservicioZuulApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ProyectoMicroservicioZuulApplication.class, args);
+	}
+
+}

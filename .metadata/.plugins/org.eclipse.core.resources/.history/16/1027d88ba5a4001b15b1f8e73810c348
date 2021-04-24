@@ -1,0 +1,32 @@
+zuul:
+  routes:
+    catalogo:
+      path: /catalogo/**
+      sensitive-headers:
+      service-id: servicio.catalogo
+    compra:
+      path: /compra/**
+      sensitive-headers:
+      service-id: servicio.compra
+    uaa:
+      path: /uaa/**
+      sensitive-headers:
+      service-id: micro-uaa  
+    
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+server:
+  port: 6565
+  
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:7777/user
+ 
+spring:
+  profiles:
+    active:
+    - prod
